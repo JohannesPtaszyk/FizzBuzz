@@ -18,9 +18,14 @@ public class TestFizzBuzz {
                 {4, "4"},
                 {5, "Buzz"},
                 {6, "Fizz"},
+                {7, "Whizz"},
                 {10,"Buzz"},
                 {12,"Fizz"},
-                {15,"FizzBuzz"}
+                {15,"FizzBuzz"},
+                {17, "Whizz"},
+                {23,"Fizz"},
+                {25,"Buzz"},
+                {105,"FizzBuzzWhizz"}
         });
     }
 
