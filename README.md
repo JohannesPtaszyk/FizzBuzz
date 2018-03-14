@@ -40,5 +40,6 @@ Buzz
 
 ### Stage 3 - new requirements: Whizz
 ```
+We go further an play the game with higher counts than 100..
  A number is Whizz if it is divisible by 7 or if it has a 7 in it
 ```
