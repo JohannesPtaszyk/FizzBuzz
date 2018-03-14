@@ -17,7 +17,10 @@ public class TestFizzBuzz {
                 {3, "Fizz"},
                 {4, "4"},
                 {5, "Buzz"},
-                {6, "Fizz"}
+                {6, "Fizz"},
+                {10,"Buzz"},
+                {12,"Fizz"},
+                {15,"FizzBuzz"}
         });
     }
 
@@ -30,7 +33,8 @@ public class TestFizzBuzz {
     }
 
     @Test
-    public void testReturnFor(){
-        Assert.assertEquals(tExpected,FizzBuzz.result(tInput));
+    public void testReturnForInput() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        Assert.assertEquals(tExpected, fizzBuzz.result(tInput));
     }
 }

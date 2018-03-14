@@ -1,15 +1,37 @@
 public class FizzBuzz {
-    public static String result (int input) {
-        String result = null;
-        if (input % 3 == 0) {
-            result = "Fizz";
+
+    private static final String FIZZ = "Fizz";
+    private static final String BUZZ = "Buzz";
+    private static final String EMPTY_STRING = "";
+
+    private boolean isFizz (int input) {
+        return input % 3 == 0;
+    }
+
+    private boolean isBuzz (int input) {
+        return input % 5 == 0;
+    }
+
+    private boolean isResultEmpty (String result) {
+        return result.equals(EMPTY_STRING);
+    }
+
+    private String returnIntegerAsString(int input) {
+        return Integer.toString(input);
+    }
+
+    public String result (int input) {
+        StringBuilder resultBuilder = new StringBuilder();
+
+        if (isFizz(input)) {
+            resultBuilder.append(FIZZ);
         }
-        if (input % 5 == 0) {
-            result = "Buzz";
+        if (isBuzz(input)) {
+            resultBuilder.append(BUZZ);
         }
-        if (result == null) {
-            result = Integer.toString(input);
+        if (isResultEmpty(resultBuilder.toString())) {
+            resultBuilder.append(returnIntegerAsString(input));
         }
-        return result;
+        return resultBuilder.toString();
     }
 }
