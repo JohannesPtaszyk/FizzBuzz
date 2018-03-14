@@ -44,5 +44,7 @@ Buzz
 ```
 
 ### Stage 4 - new requirements: FizzBuzzWhizz
+```
 We go further an play the game with higher counts than 100..
 A number is FIzzBuzzWhizz if it is devisible by 7, 5 and 3.
+```
